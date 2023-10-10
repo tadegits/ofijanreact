@@ -17,7 +17,7 @@ function Navbar() {
 	return (
 		<header>
             <div className='logo'>
-                <img src={Logo} width={100} alt='Logo'/>
+                <img src={Logo} width={70} alt='Logo'/>
 			    <h1>Ofijan</h1>
             </div>
 			<nav ref={navRef}>
