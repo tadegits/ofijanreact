@@ -22,6 +22,7 @@ header {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -50,6 +51,18 @@ header div,
 nav {
 	display: flex;
 	align-items: center;
+
+}
+nav.a{
+    white-space: nowarp;
+    font-weight:900;
+}
+.logo{
+    width: 50%;
+}
+
+.logo h1{
+    margin-left: 2%;
 }
 
 @media only screen and (max-width: 1024px) {
