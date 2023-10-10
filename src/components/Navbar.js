@@ -1,29 +1,41 @@
 import React from 'react';
 import Light from './Light';
-import '../components/Styles/Nav.css';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./Styles/Nav.css";
 
 function Navbar() {
-  return (
-    <nav>
-        <div>
-            Logo
-        </div>
-        <div>
-            Name
-        </div>
-        <div>
-            <ul className='list'>
-                <li>Home</li>
-                <li>Exit Exam</li>
-                <li>Signin</li>
-                <li>Sign Up</li>
-            </ul>
-        </div>
-        <div>
-            <Light />
-        </div>
-    </nav>
-  )
+	const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+
+	return (
+		<header>
+			<h3>Ofijan</h3>
+			<nav ref={navRef}>
+				<a href="/#">Home</a>
+				<a href="/#">Blog</a>
+				<a href="/#">About Us</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+            <div>
+                <Light/>
+            </div>
+		</header>
+	);
 }
 
-export default Navbar
+export default Navbar;
