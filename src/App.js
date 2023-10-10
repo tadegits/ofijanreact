@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>First Ofijan test</h1>
+        <h1>First Ofijan test TADELE SHIMELIS</h1>
         {/* <a
           className="App-link"
           href="https://reactjs.org"
@@ -13,6 +13,7 @@ function App() {
         >
           Learn React
         </a> */}
+        <h2>hey there!</h2>
       </header>
     </div>
   );
