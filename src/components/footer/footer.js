@@ -74,16 +74,11 @@ export default function footer() {
                     </p>
                 </div>
                 <div className='sb__footer-below-links'>
-                   <a href='/terms'>
-                    <div>
-                        <p>Terms & Conditions</p>
+                   
+                    <div className='term'>
+                        <p><a href='/terms'>Terms & Conditions</a> <a href='/privacy'>Privacy</a></p>
                     </div>
-                    </a>
-                    <a href='/terms'>
-                    <div>
-                        <p>Privacy</p>
-                    </div>
-                    </a>
+            
                 </div>
             </div>
         </div>

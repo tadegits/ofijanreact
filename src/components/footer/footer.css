@@ -64,6 +64,14 @@ hr{
     line-height: 15px;
     color: rgb(255, 255,255);
     font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+.term{
+    text-align: center;
+}
+.priv{
+    text-align: center;
 }
 @media screen and (max-width: 850px)
 {
@@ -86,7 +94,8 @@ hr{
     };
     .sb__footer-below{
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
+        text-align: center;
     }
     .sb__footer-below-links{
         flex-direction: column;
