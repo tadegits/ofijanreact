@@ -1,5 +1,6 @@
 import React from 'react'
 import "./footer.css"
+import Google from '../../assets/image/google.png'
 
 export default function footer() {
   return (
@@ -60,7 +61,7 @@ export default function footer() {
                 <div className='sb__footer-links_div'>
                     <h4>Cooming soon on</h4>
                     <div className='socialmedia'>
-                        <p>Telegram</p>
+                        <p><img src={Google} width={100} height={100}/></p>
                         
                     </div>
                 </div>
